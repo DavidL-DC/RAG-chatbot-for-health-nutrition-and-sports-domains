@@ -77,8 +77,8 @@ source .venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-### 3) Create a .env file
-Create a file named .env in the project root with:
+### 3) Create a `.env` file
+Create a file named `.env` in the project root with:
 ```
 OPENAI_API_KEY=your_api_key_here
 ```
@@ -86,28 +86,27 @@ OPENAI_API_KEY=your_api_key_here
 ## Usage
 ### 1) Ingest documents and build the vector store
 Place PDFs in:
-
-data/raw/health/
-
-data/raw/nutrition/
-
-data/raw/sport/
-
+- `data/raw/health/`
+- `data/raw/nutrition/`
+- `data/raw/sport/`
 Then run:
-
+```
 python app/ingest.py
-2) Run the Streamlit UI
+```
+### 2) Run the Streamlit UI
+```
 python -m streamlit run app/ui_streamlit.py
-3) Run the mini evaluation
+```
+### 3) Run the mini evaluation
+```
 python app/evaluation.py
-Outputs will be written to eval/ as a timestamped CSV.
+```
+Outputs will be written to `eval/` as a timestamped CSV.
 
-Notes
-The document corpus is not included due to copyright restrictions (library access).
+## Notes
+- The document corpus is not included due to copyright restrictions (library access).
+- This prototype is intended for academic demonstration purposes.
+- The system is not a medical device and must not be used for diagnosis or treatment decisions.
 
-This prototype is intended for academic demonstration purposes.
-
-The system is not a medical device and must not be used for diagnosis or treatment decisions.
-
-License
+## License
 MIT License
