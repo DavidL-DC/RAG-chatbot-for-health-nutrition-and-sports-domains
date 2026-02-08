@@ -107,6 +107,7 @@ Outputs will be written to `eval/` as a timestamped CSV.
 - The document corpus is **not included** due to copyright restrictions (library access).
 - This prototype is intended for **academic demonstration purposes**.
 - The system is **not a medical device** and must not be used for diagnosis or treatment decisions.
+- The questions and prompt used in the codefiles are in **german** because of the usecase for the thesis.
 
 ## License
 MIT License
