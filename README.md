@@ -64,14 +64,19 @@ If the available context is insufficient, the chatbot explicitly abstains from a
 ### 1) Create a virtual environment
 ```bash
 python -m venv .venv
+```
 Activate (Windows PowerShell):
-
+```bash
 .\.venv\Scripts\Activate.ps1
+```
 Activate (macOS/Linux):
-
+```bash
 source .venv/bin/activate
-2) Install dependencies
+```
+### 2) Install dependencies
+```
 pip install -r requirements.txt
+```
 3) Create a .env file
 Create a file named .env in the project root with:
 
