@@ -50,9 +50,9 @@ If the available context is insufficient, the chatbot explicitly abstains from a
 ## Repository Structure
 
 - `app/ingest.py` – builds the vector store from PDFs  
-- `app/query_core.py` – RAG pipeline (retrieval, prompt, abstention, source formatting)  
+- `app/query.py` – RAG pipeline (retrieval, prompt, abstention, source formatting)  
 - `app/ui_streamlit.py` – Streamlit UI  
-- `app/evaluation.py` – mini evaluation script (exports CSV)  
+- `app/eval.py` – mini evaluation script (exports CSV)  
 - `data/raw/` – input PDFs (not included)  
 - `vectorstore/chroma/` – persisted vector database (generated locally)  
 - `eval/` – evaluation outputs (CSV)
@@ -99,7 +99,7 @@ python -m streamlit run app/ui_streamlit.py
 ```
 ### 3) Run the mini evaluation
 ```
-python app/evaluation.py
+python app/eval.py
 ```
 Outputs will be written to `eval/` as a timestamped CSV.
 
