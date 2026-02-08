@@ -62,27 +62,29 @@ If the available context is insufficient, the chatbot explicitly abstains from a
 ## Setup (Local)
 
 ### 1) Create a virtual environment
-```bash
+```
 python -m venv .venv
 ```
 Activate (Windows PowerShell):
-```bash
+```
 .\.venv\Scripts\Activate.ps1
 ```
 Activate (macOS/Linux):
-```bash
+```
 source .venv/bin/activate
 ```
 ### 2) Install dependencies
 ```
 pip install -r requirements.txt
 ```
-3) Create a .env file
+### 3) Create a .env file
 Create a file named .env in the project root with:
-
+```
 OPENAI_API_KEY=your_api_key_here
-Usage
-1) Ingest documents and build the vector store
+```
+
+## Usage
+### 1) Ingest documents and build the vector store
 Place PDFs in:
 
 data/raw/health/
