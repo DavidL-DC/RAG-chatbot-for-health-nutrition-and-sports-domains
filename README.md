@@ -104,9 +104,9 @@ python app/evaluation.py
 Outputs will be written to `eval/` as a timestamped CSV.
 
 ## Notes
-- The document corpus is not included due to copyright restrictions (library access).
-- This prototype is intended for academic demonstration purposes.
-- The system is not a medical device and must not be used for diagnosis or treatment decisions.
+- The document corpus is **not included** due to copyright restrictions (library access).
+- This prototype is intended for **academic demonstration purposes**.
+- The system is **not a medical device** and must not be used for diagnosis or treatment decisions.
 
 ## License
 MIT License
